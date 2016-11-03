@@ -7,9 +7,8 @@
 
 # JavaScript
 * Q1：介绍JavaScript的基本数据类型。
-ES5下共有六种：Undefined，Null，Boolean，Number和String，还含有一种复杂数据类型—Object
 
-***
+> ES5下共有六种：Undefined，Null，Boolean，Number和String，还含有一种复杂数据类型—Object
 
 * Q2：JavaScript原型，原型链 ? 有什么特点？
 * Q3：JavaScript有几种类型的值？（堆：原始数据类型和 栈：引用数据类型），你能画一下他们的内存图吗？
