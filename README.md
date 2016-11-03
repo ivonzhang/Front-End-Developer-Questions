@@ -22,3 +22,4 @@
 * Q11：["1", "2", "3"].map(parseInt) 答案是多少？
 * Q12：什么是闭包（closure），为什么要用它？
 
+[更多请见WIKI部分](https://github.com/ivonzhang/Front-End-Developer-Questions/wiki)
