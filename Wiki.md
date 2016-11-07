@@ -1,9 +1,9 @@
 # Welcome to the Front-End-Developer-Questions wiki!
 
 # 目录
-* 1. [JavaScript部分](#JavaScript)
-* 2. [CSS部分] (#css)
-* 3. [HTML部分] (#HTML)
+* 1. [**JavaScript部分**](#JavaScript)
+* 2. [**CSS部分**](#css)
+* 3. [**HTML部分**](#HTML)
 
 <a name="JavaScript"></a>
 # JavaScript部分
