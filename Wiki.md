@@ -227,13 +227,13 @@ undefined 表示这个值不存在。typeof（null）－object；typeof（undefi
     	  this.sendData();
     	})  
 	1. 7 Promises
-	>
+	>  
 	1. 8 **Block-Scoped Constructs Let and Const**（块作用域和构造let和const）  
-	>
+	>   
 	1. 9 **Classes** （类）in ES6
-	>
+	>  
 	1. 10 **Modules** （模块）  
->
+>  
 
 * ECMAScript6 怎么写class么，为什么会出现class这种东西?  
 	> 利用关键字 class ，添加一个构造函数来实现了，举例如下：  
@@ -250,7 +250,7 @@ undefined 表示这个值不存在。typeof（null）－object；typeof（undefi
 			}
 		}  
 
-	> 使用extend来继承:
+	> 使用**extend**来继承:
 
 * 异步加载的方式有哪些？
 	> 1.defer（IE）。  
@@ -416,6 +416,28 @@ undefined 表示这个值不存在。typeof（null）－object；typeof（undefi
 * 检测浏览器版本版本有哪些方式？
 
 * 我们给一个dom同时绑定两个点击事件，一个用捕获，一个用冒泡，你来说下会执行几次事件，然后会先执行冒泡还是捕获  
+
+* js中的变量提升？  
+	* 理解这个，首先要理解**作用域**，在此不做详述。  
+	* 在javascript，变量有4种基本方式进入作用域：  
+	1 语言内置：所有的作用域里都有this和arguments；(译者注：经过测试arguments在全局作用域是不可见的)  
+	2 形式参数：函数的形式参数会作为函数体作用域的一部分；  
+	3 函数声明：像这种形式：function foo(){}；  
+	4 变量声明：像这样：var foo；  
+	理解变量提升：**函数声明和变量声明总是会被解释器悄悄地被“提升”到方法体的最顶部**，而**赋值**在后，如： 
+ 
+			function foo() {  
+				bar();  
+				var x = 1;  
+			}   
+	  
+		实际上被解析为：  
+
+		    function foo() {  
+				var x;  
+				bar();  
+				x = 1;  
+			}  
 
 <a name="css"></a>
 # CSS部分
