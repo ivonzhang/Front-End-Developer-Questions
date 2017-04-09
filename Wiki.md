@@ -4,6 +4,7 @@
 * 1. [**JavaScript部分**](#JavaScript)
 * 2. [**CSS部分**](#css)
 * 3. [**HTML部分**](#HTML)
+* 4. [**Nodejs部分**](#NODEJS)
 
 <a name="JavaScript"></a>
 # JavaScript部分
@@ -1077,3 +1078,11 @@ L-V-H-A :  a:link {} a:visited {} a:hover {} a:active {}
 	Semantic Style Elements -- 语义样式标签  
 	strong, em, ins, del, code  
 	应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。
+
+<a name="NODEJS"></a>
+# Nodejs部分
+* ### 如何更新npm的版本 ###
+	* #### npm -g install npm@3.0.0 后面@跟的是版本号 ####
+	* 更新node需要两步：  
+		1）sudo npm install -g n   
+		2）sudo n latest
