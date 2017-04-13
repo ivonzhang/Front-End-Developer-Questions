@@ -2,9 +2,10 @@
 
 # 目录
 * 1. [**JavaScript部分**](#JavaScript)
-* 2. [**CSS部分**](#css)
-* 3. [**HTML部分**](#HTML)
-* 4. [**Nodejs部分**](#NODEJS)
+* 2. [**
+* **](#css) 
+* 3. [**HTML部分**](#HTML) 
+* 4. [**Nodejs部分**](#NODEJS) 
 
 <a name="JavaScript"></a>
 # JavaScript部分
@@ -458,7 +459,7 @@ undefined 表示这个值不存在。typeof（null）－object；typeof（undefi
 垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。
 
 	> setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
-**闭包、控制台日志、循环**（在两个对象彼此引用且彼此保留时，就会产生一个循环）
+**控制台日志、循环**（在两个对象彼此引用且彼此保留时，就会产生一个循环）。闭包并不会引起内存泄漏，只是由于IE9 之前的版本对JScript对象和COM对象使用不同的垃圾收集，从而导致内存无法进行回收。
 
 * JQuery一个对象可以同时绑定多个事件，这是如何实现的？
 
@@ -558,6 +559,23 @@ undefined 表示这个值不存在。typeof（null）－object；typeof（undefi
 
 * ”==”和“===”的不同  
 	前者会自动转换类型；后者不会。  
+
+* 介绍一下 JS 有哪些内置对象  
+	- Object对象  
+	- 数据类型对象：Boolean、String、Number、Array  
+	- 其他对象：Function、Argument、Math、Date、RegExp、Error   
+
+
+* 写出程序运行的结果?  
+* 
+	    for(var i=0, j=0; i<10, j<6; i++, j++){
+      		k = i + j;
+    	}
+    	//浏览器输出： 10
+	此时，`i=6，j=6` 因为循环体重的逻辑判断 `i<10, j<6` 是逗号表达式，以最终的`j<6`的返回值为基准，所以退出循环前 i和j都等于5，故`k=5+5`，结果为10 。此时，若交换为`j<6, i<10`，输出的k值则是18 。  
+
+* 如何控制alert中的换行？  
+	`alert("first line\n second line")`  
 
 
 
